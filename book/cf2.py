@@ -114,13 +114,18 @@ def UserSimilarityBack(train):
             N[u] += 1
             C[u] = defaultdict(int)
             for v in users:
-                #print('v=',v)
+                print('u=', u, 'v=',v)
                 if u == v:
-                    C[u][v] = 0
+                    C[u][v] += 0
+                    print(C[u][v])
+                    print(C)
                     continue
                 C[u][v] += 1
+                print(C[u][v])
+                print(C)
     print(N)
     print(C)
+    print(C[0][1])
     #calculate finial similarity matrix W
     W = defaultdict(dict)
     for u, related_users in C.items():
