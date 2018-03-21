@@ -2,15 +2,10 @@
 import unittest
 import os
 
+
 from book.cf2 import *
-from test import test_data
 
 class CfTest(unittest.TestCase):
-
-    @classmethod
-    def setUpClass(cls):
-        filepath = os.path.join(os.path.dirname(__file__), '../pdfs/table.pdf')
-        cls.extractor = StockFinanceExtractor(filepath)
 
     def test_get_tables(self):
         tables = self.extractor.get_tables()

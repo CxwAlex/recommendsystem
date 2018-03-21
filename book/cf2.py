@@ -1,7 +1,7 @@
 import random
 
 #将数据集拆分成训练集和测试集的过程
-def SplitData(data, M, k, seed):
+def SplitData(data, M, k, seed=1234):
     test = []
     train = []
     random.seed(seed)
