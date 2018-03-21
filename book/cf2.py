@@ -1,13 +1,19 @@
 import random
+import math
+from collections import defaultdict
+
+def GetRecommendation(user, N):
+    return [0]*N
+
 
 #将数据集拆分成训练集和测试集的过程
-def SplitData(data, M, k, seed=1234):
+def SplitData(data, M, k, seed=0):
     test = []
     train = []
     random.seed(seed)
     for user, item in data:
-        if random.randint(0,M) == k:
-            #randint随机生成0~M之间的树
+        if random.randint(0,M) <= k:
+            #randint随机生成0~M之间的数
             test.append([user,item])
         else:
             train.append([user,item])
@@ -20,7 +26,7 @@ def Recall(train, test, N):
     for user in train.keys():
         tu = test[user]
         rank = GetRecommendation(user, N)
-        for item, pui in rank:
+        for item in rank:
             if item in tu:
                 hit += 1
         all += len(tu)
@@ -32,37 +38,41 @@ def Precision(train, test, N):
     for user in train.keys():
         tu = test[user]
         rank = GetRecommendation(user, N)
-        for item, pui in rank:
+        for item in rank:
             if item in tu:
                 hit += 1
         all += N
     return hit / (all * 1.0)
 
 #计算覆盖率
-def Coverage(train, test, N):
+def Coverage(train, N):
     recommend_items = set()
     all_items = set()
     for user in train.keys():
-        for item in train[user].keys():
+        for item in train[user]:
             all_items.add(item)
         rank = GetRecommendation(user, N)
-        for item, pui in rank:
+        for item in rank:
             recommend_items.add(item)
     return len(recommend_items) / (len(all_items) * 1.0)
 
 #计算新颖度
-def Popularity(train, test, N):
+def Popularity(train, N):
+    #首先计算不同物品的流行度
     item_popularity = dict()
     for user, items in train.items():
-        for item in items.keys()
+        for item in items:
             if item not in item_popularity:
-                item_popularity[item] = 0
+                item_popularity[item] = 1
             item_popularity[item] += 1
+    #接着计算推荐物品的流行度
     ret = 0
     n = 0
     for user in train.keys():
         rank = GetRecommendation(user, N)
-        for item, pui in rank:
+        for item in rank:
+            #print(item_popularity[item])
+            #print(math.log(item_popularity[item]))
             ret += math.log(1 + item_popularity[item])
             n += 1
     ret /= n * 1.0
@@ -70,43 +80,57 @@ def Popularity(train, test, N):
 
 #计算余弦相似度
 def UserSimilarity(train):
-    W = dict()
+    len_user = len(train)
+    w = [[0 for i in range(len_user)] for j in range(len_user)]
     for u in train.keys():
         for v in train.keys():
             if u == v:
                 continue
-            W[u][v] = len(train[u] & train[v])
-            W[u][v] /= math.sqrt(len(train[u]) * len(train[v]) * 1.0)
-    return W
+            w[u][v] = len(set(train[u]) & set(train[v]))
+            w[u][v] /= math.sqrt(len(train[u]) * len(train[v]) * 1.0)
+    return w
 
 #利用倒排方法计算用户相似度
-def UserSimilarity(train):
+def UserSimilarityBack(train):
     # build inverse table for item_users
     item_users = dict()
     for u, items in train.items():
-        for i in items.keys():
+        for i in items:
             if i not in item_users:
                 item_users[i] = set()
             item_users[i].add(u)
+    #print(item_users)
 
     #calculate co-rated items between users
-    C = dict()
-    N = dict()
+    #C表示u和v对拥有相同兴趣的物品数
+    #N表示用户对物品产生行为的个数
+
+    len_user = len(train)
+    C = defaultdict(dict)
+    N = defaultdict(int)
     for i, users in item_users.items():
+        print(i, users)
         for u in users:
             N[u] += 1
+            C[u] = defaultdict(int)
             for v in users:
+                #print('v=',v)
                 if u == v:
+                    C[u][v] = 0
                     continue
                 C[u][v] += 1
-
+    print(N)
+    print(C)
     #calculate finial similarity matrix W
-    W = dict()
+    W = defaultdict(dict)
     for u, related_users in C.items():
+        W[u] = defaultdict(int)
         for v, cuv in related_users.items():
             W[u][v] = cuv / math.sqrt(N[u] * N[v])
     return W
 
+
+'''
 #userCF推荐算法
 def Recommend(user, train, W):
     rank = dict()
@@ -264,5 +288,5 @@ def PersonalRank(G, alpha, root):
                     tmp[j] += 1 - alpha
         rank = tmp
     return rank
-
+'''
 

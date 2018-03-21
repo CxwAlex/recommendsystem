@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84216e84-e1f5-4c69-967c-9faaf71271a0" name="默认的" comment="num1-done">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="84216e84-e1f5-4c69-967c-9faaf71271a0" name="默认的" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test-2.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/cf2.py" afterPath="$PROJECT_DIR$/book/cf2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/num1.py" afterPath="$PROJECT_DIR$/book/num1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test-1.py" afterPath="$PROJECT_DIR$/test/test-1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test-2.py" afterPath="$PROJECT_DIR$/test/test-2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,6 +14,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/recommendsystem$Nosetests_in_test_2_py.coverage" NAME="Nosetests in test-2.py Coverage Results" MODIFIED="1521607475980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/recommendsystem$Nosetests_in_test_2_2_py.coverage" NAME="Nosetests in test-2-2.py Coverage Results" MODIFIED="1521619732172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/recommendsystem$Nosetests_in_test_1_py.coverage" NAME="Nosetests in test-1.py Coverage Results" MODIFIED="1521602209110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
   <component name="FileEditorManager">
@@ -26,9 +25,11 @@
           <file leaf-file-name="cf2.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/book/cf2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="52">
-                  <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-                  <folding />
+                <state relative-caret-position="93">
+                  <caret line="115" column="27" lean-forward="true" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -37,12 +38,14 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="test-2.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/test-2.py">
+          <file leaf-file-name="test-2-2.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/test-2-2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="104">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="300">
+                  <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#17#32#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -82,6 +85,8 @@
         <option value="$PROJECT_DIR$/test/test-1.py" />
         <option value="$PROJECT_DIR$/book/num1.py" />
         <option value="$PROJECT_DIR$/test/test-2.py" />
+        <option value="$PROJECT_DIR$/test/test-2-1.py" />
+        <option value="$PROJECT_DIR$/test/test-2-2.py" />
         <option value="$PROJECT_DIR$/book/cf2.py" />
       </list>
     </option>
@@ -136,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in test-1.py">
+  <component name="RunManager" selected="Python tests.Nosetests in test-2-2.py">
     <configuration name="Nosetests for NumTest.test_precision_and_recall" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -169,14 +174,50 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test-1.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="2">
+    <configuration name="Nosetests in test-2-2.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="代码集" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test-2-2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Nosetests in test-2.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="代码集" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test-2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test-1.py" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for NumTest.test_precision_and_recall" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in test-2.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in test-2-2.py" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test-1.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for NumTest.test_precision_and_recall" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test-2-2.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in test-2.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in test-1.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests for NumTest.test_precision_and_recall" />
       </list>
     </recent_temporary>
   </component>
@@ -191,43 +232,50 @@
       <option name="presentableId" value="Default" />
       <updated>1515638013521</updated>
     </task>
+    <task id="LOCAL-00001" summary="num1-done">
+      <created>1521602596258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521602596258</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 02m 42s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 15h 57m 36s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 02m 56s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 15h 58m 35s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 03m 54s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 01m 35s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 04m 46s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 02m 18s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 05m 05s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 03m 39s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 08m 54s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 05m 51s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 09m 15s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 07m 02s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 15m 38s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 07m 21s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 16m 15s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 08m 13s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test-1_py - 2018.03.21 at 11h 16m 49s.xml">
-      <configuration name="Nosetests in test-1.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test-2-2_py - 2018.03.21 at 16h 08m 52s.xml">
+      <configuration name="Nosetests in test-2-2.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -238,7 +286,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23390558" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09652077" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3613917" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -252,6 +300,30 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23390558" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09652077" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -260,7 +332,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="num1-done" />
+    <option name="LAST_COMMIT_MESSAGE" value="num1-done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -274,7 +347,7 @@
         <state relative-caret-position="494">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#17#32#0" expanded="true" />
+            <element signature="e#17#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -284,7 +357,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -294,7 +367,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#17#32#0" expanded="true" />
+            <element signature="e#17#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -327,7 +400,7 @@
         <state relative-caret-position="797">
           <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -337,24 +410,44 @@
         <state relative-caret-position="1092">
           <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
           <folding>
-            <element signature="e#17#32#0" expanded="true" />
+            <element signature="e#17#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test-2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="91" column="6" lean-forward="false" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-2-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="78" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test-2-2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book/cf2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="93">
+          <caret line="115" column="27" lean-forward="true" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
