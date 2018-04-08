@@ -1,10 +1,3 @@
-#对两两物品计算余弦相似度
-function CalculateSimilarity(D)
-    for di in D:
-        for dj in D:
-            w[i][j] = CosineSimilarity(di, dj)
-    return w
-
 #使用关键词-物品倒排表计算物品相似度
 function CalculateSimilarity(entity-items)
     w = dict()
