@@ -4,6 +4,28 @@ import os
 
 from book.cf2 import *
 
+
+#构造原始数据集
+raw_data1 = {
+    "user1": ["item1", "item2", "item3"],
+    "user2": ["item1", "item4", "item5"],
+    "user3": ["item2", "item6", "item7"],
+    "user4": ["item3", "item4", "item6"],
+    "user5": ["item5", "item6", "item7"]
+}
+
+raw_data2 = {
+    "user1": [1, 1, 1, 0, 0, 0, 0],
+    "user2": [1, 0, 0, 1, 1, 0, 0],
+    "user3": [0, 1, 0, 0, 0, 1, 1],
+    "user4": [0, 0, 1, 1, 0, 1, 0],
+    "user5": [0, 0, 0, 0, 1, 1, 1]
+}
+
+
+std_index = ["item1", "item2", "item3", "item4", "item5", "item6", "item7"]
+
+
 class SplitDataTest(unittest.TestCase):
 
     def test_split_data(self):
@@ -32,7 +54,7 @@ class SplitDataTest(unittest.TestCase):
         result = SplitData(data, 10, 3)
         len_train = len(result[0])
         len_test = len(result[1])
-        #print(len_test, len_train)
+        print(len_test, len_train)
         self.assertEqual(len_train, 66)
 
 class DataTest(unittest.TestCase):
